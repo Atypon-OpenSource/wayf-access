@@ -11,7 +11,7 @@
   },
   "repository": "",
   "scripts": {
-    "build": "ember build",
+    "build": "npm install && ember build --environment='production' -o='../public' && rm -Rf node_modules",
     "start": "ember server",
     "test": "ember test"
   },
