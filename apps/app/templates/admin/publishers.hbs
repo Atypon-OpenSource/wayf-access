@@ -1,0 +1,16 @@
+<div class='list-item header-row'>
+  <div class="col date">
+    Member Since
+  </div>
+  <div class="col name">
+   Name
+  </div>
+  <div class="col actions">
+  </div>
+</div>
+{{#each model as |publisher|}}
+  {{item-publisher item=publisher}}
+{{/each}}
+<div class="add">
+  {{#link-to 'admin.newpublisher' class='btn btn-color-primary'}} + {{/link-to}}
+</div>

@@ -1,0 +1,11 @@
+<div class='list-item'>
+  <div class="col date">
+    {{moment-format item.date 'll'}}
+  </div>
+  <div class="col name actions link">
+      {{#link-to "admin.publisher" item}} {{item.name}} {{/link-to}}
+  </div>
+  <div class="col actions link">
+    <a href="#" {{action "delete" item.id}}> delete </a>
+  </div>
+</div>

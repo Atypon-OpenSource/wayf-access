@@ -1,0 +1,21 @@
+<div class="grid">
+    <header class="grid-header">
+      <nav class="header-nav">
+        <div class="header-logo">
+          <span class="brand-name fnt-brand">
+             WAYF Cloud
+         </span>
+        </div>
+        <div class="header-actions">
+        </div>
+      </nav>
+  </header>
+  <main class="grid-body">
+      {{outlet}}
+  </main>
+  <footer class="grid-footer">
+    <div class="copyright">
+      {{#link-to "about" class="link link-colored" target="_blank"}}About the WAYF Cloud{{/link-to}}
+    </div>
+  </footer>
+</div>

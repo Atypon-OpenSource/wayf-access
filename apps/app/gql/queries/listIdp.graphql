@@ -1,0 +1,9 @@
+{
+  listIdp {
+    id
+    name
+    logoUrl
+    frequency
+    lastActiveDate
+  }
+}

@@ -1,0 +1,17 @@
+<div class="col timeline">
+  <svg width="20" height="60" style="left: -10px;position: relative;">
+     <circle class="circle-outter" cx="10" cy="35" r="8" />
+     <circle class="circle-inner" cx="10" cy="35" r="3" />
+  </svg> </div>
+  <div class="col date">
+    {{moment-format item.date 'lll'}}
+  </div>
+  <div class="col name">
+    {{item.publisherName}}
+  </div>
+  <div class="col actions activity {{actionClass}}">
+      {{actionClass}}
+  </div>
+  <div class="col data">
+      {{item.data.name}}
+  </div>

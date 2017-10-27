@@ -1,0 +1,13 @@
+<div class="item-form">
+  <div class="item-form-header row">
+    <div class="item-form-title font-xl">
+      Approve Registration Request
+    </div>
+    <div class="item-form-close">
+      {{#link-to 'admin.registrations'}} x {{/link-to}}
+    </div>
+  </div>
+  <div class="item-form-main row">
+    {{registration-approve-form registrationApproved='registrationApproved' item=model}}
+  </div>
+</div>

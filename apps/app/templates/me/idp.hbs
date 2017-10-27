@@ -1,0 +1,21 @@
+<div class='list-item header-row'>
+  <div class="col logo">
+  </div>
+  <div class="col name">
+    Organization
+  </div>
+  <div class="col date">
+    Last Used
+  </div>
+  <div class="col actions ">
+  </div>
+</div>
+{{#if model}}
+{{#each model as |idp|}}
+  {{item-idp item=idp}}
+{{/each}}
+{{else}}
+<div class="center">
+no items
+</div>
+{{/if}}

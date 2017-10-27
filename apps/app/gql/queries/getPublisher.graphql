@@ -1,0 +1,18 @@
+query ($id: ID!){
+  getPublisher (id:$id) {
+    id
+    name
+    date
+    api {
+      widgetUrl
+      token
+    }
+    contact {
+      id
+      firstName
+      lastName
+      email
+      phone
+    }
+  }
+}

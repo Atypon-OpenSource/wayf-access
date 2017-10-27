@@ -1,0 +1,12 @@
+query ($skip: Int, $limit: Int) {
+  listActivity (skip: $skip, limit: $limit){
+    id
+    action
+    publisherName
+    date
+    data {
+      id
+      name
+    }
+  }
+}

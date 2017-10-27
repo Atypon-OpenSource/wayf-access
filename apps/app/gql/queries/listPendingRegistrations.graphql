@@ -1,0 +1,15 @@
+{
+  listPendingRegistrations {
+    id
+    code
+    name
+    date
+    contact {
+      id
+      firstName
+      lastName
+      phone
+      email
+    }
+  }
+}

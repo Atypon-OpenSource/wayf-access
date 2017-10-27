@@ -1,0 +1,14 @@
+<div class='list-item'>
+  <div class="col date">
+    {{moment-format item.date 'lll'}}
+  </div>
+  <div class="col name">
+   {{item.name}}
+  </div>
+  <div class="col actions link">
+    {{#link-to "admin.registration.approve" item}} approve {{/link-to}}
+  </div>
+  <div class="col actions link">
+    {{#link-to "admin.registration.reject" item}} reject {{/link-to}}
+  </div>
+</div>

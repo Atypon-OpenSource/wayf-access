@@ -1,0 +1,18 @@
+query ($skip: Int, $limit: Int){
+  listPublishers (skip: $skip, limit: $limit){
+    id
+    name
+    date
+    api {
+      widgetUrl
+      token
+    }
+    contact {
+      id
+      firstName
+      lastName
+      email
+      phone
+    }
+  }
+}

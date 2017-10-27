@@ -1,0 +1,27 @@
+<div class='list-item header-row'>
+  <div class="col timeline" style="border:none;">
+  </div>
+  <div class="col date">
+    Date
+  </div>
+  <div class="col name">
+   Service Provider
+  </div>
+  <div class="col actions ">
+    Action
+  </div>
+  <div class="col data">
+    Data
+  </div>
+</div>
+{{#each model as |activity|}}
+  {{item-activity item=activity}}
+{{/each}}
+<!-- <div style="padding:20px">
+  {{#if loadingMore}}
+    <div class="center">
+      fetching more activities...
+    </div>
+  {{/if}}
+  <div class="btn btn-color-secondary" {{action 'moreActivities'}}>more...</div>
+</div> -->

@@ -1,0 +1,36 @@
+<form class="form-create ">
+   <div class="form-group">
+     <label>Name</label>
+     {{input value=item.name type='text' class='form-control' required='true'}}
+   </div>
+   <div class="form-group">
+     <label ffor="first name">First Name</label>
+     {{input value=item.contact.firstName type='text' class='form-control' required='true'}}
+   </div>
+   <div class="form-group">
+     <label for="last name">Last Name</label>
+     {{input value=item.contact.lastName class='form-control' type='text' required='true'}}
+   </div>
+   <div class="form-group">
+     <label for="email">e-mail address</label>
+     {{input value=item.contact.email  class='form-control' type='email' required='true'}}
+   </div>
+   <div class="form-group">
+     <label for="phone">Phone Number</label>
+     {{input value=item.contact.phone class='form-control' type='text' required='true'}}
+   </div>
+   <div class="form-group buttons">
+     {{#link-to 'admin.registrations' class='btn btn-color-gray width-mid'}} cancel {{/link-to}}
+     <div class="btn btn-color-secondary width-mid" {{action "approveRegistration" item}}> approve </div>
+   </div>
+   <div class="form-group center">
+     <div class="center {{loading}}">
+       <span>creating publisher...</span>
+     </div>
+ {{#if errorMessage}}
+     <div class="error {{loading}}">
+       <strong>Oops Something went wrong.</strong> Please try again.
+     </div>
+ {{/if}}
+   </div>
+ </form>

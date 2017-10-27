@@ -1,0 +1,18 @@
+<div class='list-item header-row'>
+  <div class="col name">
+       Name
+  </div>
+  <div class="col name">
+    e-mail Address
+  </div>
+  <div class="col actions ">
+  </div>
+  <div class="col actions">
+  </div>
+</div>
+{{#each model as |user|}}
+  {{item-user item=user}}
+{{/each}}
+<div class="add">
+  {{#link-to 'admin.newuser' class='btn btn-color-primary'}} + {{/link-to}}
+</div>

@@ -1,0 +1,36 @@
+.carousel {
+  padding:20px;
+  margin:20px;
+  background-color: $color-gray-ribbon;
+  border: 1px solid $color-gray-ribbon-border;
+  .slide {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width:400px;
+      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+    }
+    .message {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex:1;
+      font-family: 'Montserrat', sans-serif;
+      font-size: $font-medium;
+      &.right {
+        justify-content: flex-start;
+      }
+      &.left {
+        justify-content: flex-end;
+      }
+    }
+    .image {
+      align-self: center;
+      display: flex;
+      justify-content: center;
+      flex:2;
+    }
+  }
+}

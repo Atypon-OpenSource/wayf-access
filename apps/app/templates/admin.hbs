@@ -1,0 +1,15 @@
+<div class="my-container">
+  <nav class="my-tabs child">
+    <div class="limit-width">
+        {{#link-to "admin.registrations" class="tab"}}Pending Registrations{{/link-to}}
+        {{#link-to "admin.publishers" class="tab"}}Publishers{{/link-to}}
+        {{#link-to "admin.users" class="tab"}}Admin Users{{/link-to}}
+        {{logout-link}}
+    </div>
+  </nav>
+  <div class="active-tab child">
+    <div class="limit-width column">
+       {{outlet}}
+    </div>
+  </div>
+</div>

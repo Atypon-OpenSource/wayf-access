@@ -1,0 +1,36 @@
+<form class="form-create " {{action 'createPublisher' on='submit'}}>
+   <div class="form-group">
+     <label ffor="first name">First Name</label>
+     {{input value=firstName placeholder='Enter the first name' type='text' class='form-control' required='true'}}
+   </div>
+   <div class="form-group">
+     <label for="last name">Last Name</label>
+     {{input value=lastName placeholder='Enter the last name' class='form-control' type='text' required='true'}}
+   </div>
+   <div class="form-group">
+     <label for="email">e-mail address</label>
+     {{input value=email placeholder='Enter the email address' class='form-control' type='email' required='true'}}
+   </div>
+   <div class="form-group">
+     <label for="phone">Phone Number</label>
+     {{input value=phone placeholder='Enter the phone number' class='form-control' type='text' required='true'}}
+   </div>
+   <div class="form-group">
+     <label for="phone">Password</label>
+     {{input value=password placeholder='Enter the user password' class='form-control' type='text' required='true'}}
+   </div>
+   <div class="form-group buttons">
+     {{#link-to 'admin.users' class='btn btn-color-gray width-mid'}} cancel {{/link-to}}
+     <div class="btn btn-color-secondary width-mid" {{action "createUser" item}}> save </div>
+   </div>
+   <div class="form-group center">
+     <div class="center {{loading}}">
+       <span>saving...</span>
+     </div>
+ {{#if errorMessage}}
+     <div class="error {{loading}}">
+       <strong>Oops Something went wrong.</strong> Please try again.
+     </div>
+ {{/if}}
+   </div>
+ </form>

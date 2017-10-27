@@ -1,0 +1,18 @@
+mutation ($name: String!, $email: String!, $lastName: String!, $firstName: String!, $phone: String!, $registrationId: Int){
+  createPublisher (
+    name: $name,
+    email: $email,
+    lastName: $lastName,
+    firstName: $firstName,
+    phone: $phone,
+    registrationId: $registrationId
+  ) {
+    id
+    date
+    name
+    api {
+      token
+      widgetUrl
+    }
+  }
+}

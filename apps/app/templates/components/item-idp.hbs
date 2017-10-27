@@ -1,0 +1,17 @@
+  <div class="col logo">
+    <div class="logo-icon">
+      <!-- todo: Add img src for item.logo -->
+       {{avatar}}
+    </div>
+  </div>
+  <div class="col name">
+    {{item.name}}
+  </div>
+  <div class="col date">
+    {{moment-from-now item.lastActiveDate}}
+    <!-- {{item.lastActiveDate}} -->
+  </div>
+  <div class="col actions link">
+      <!-- <button class="btn-forget {{loading}}" {{action "forget" item}}>Forget</button> -->
+      <a href="#" {{action "forget" item}}> delete </a>
+  </div>

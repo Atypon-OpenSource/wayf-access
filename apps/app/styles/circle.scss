@@ -1,0 +1,12 @@
+.circle-outter {
+  stroke: $color-primary;
+  stroke-width:2;
+  fill:$color-white;
+  r:8;
+}
+
+.circle-inner {
+  stroke: $color-primary;
+  stroke-width:1;
+  fill: $color-primary;
+}

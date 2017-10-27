@@ -1,0 +1,32 @@
+  <div class="limit-width column narrow info-body">
+    <h1> WAYF Cloud Members </h1>
+    <div class='list-item header-row'>
+      <div class="col index">
+      </div>
+      <div class="col name">
+        Name
+      </div>
+      <div class="col date">
+        Member Since
+      </div>
+    </div>
+    {{#if model}}
+    {{#each model as |member index|}}
+    <div class='list-item'>
+      <div class="col index">
+        {{sum index 1}}
+      </div>
+      <div class="col name">
+        {{member.name}}
+      </div>
+      <div class="col date">
+        {{moment-format member.date 'll'}}
+      </div>
+    </div>
+    {{/each}}
+    {{else}}
+    <div class="center">
+    There are no members yet
+    </div>
+    {{/if}}
+  </div>

@@ -1,0 +1,36 @@
+@import "grid";
+@import "colors";
+@import "buttons";
+@import "fonts";
+@import "me";
+@import "list-item";
+@import "circle";
+@import "login-form";
+@import "item-form";
+@import "form-create";
+@import "carousel";
+
+html, body {
+  height:100%;
+  margin: 0px;
+  padding: 0px;
+//  font-family: 'Advent Pro', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  color: $color-text-dark;
+  font-size: 14px;
+  background-color: $color-background;
+}
+.ember-view{
+  height:100%;
+}
+
+a {
+ text-decoration: none;
+ color: inherit;
+}
+
+.full-width {
+  width:100%;
+}

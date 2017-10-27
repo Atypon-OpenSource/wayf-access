@@ -1,0 +1,39 @@
+.form-create {
+  display: flex;
+  flex-direction: column;
+  .form-group {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    border-bottom: 1px solid $color-gray-ribbon;
+    h1 {
+      font-size: $font-large;
+    }
+    label {
+      width: 150px;
+      align-self: auto;
+      align-content: right;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 67px;
+    }
+    input {
+      width: 300px;
+    }
+    .section-header {
+      font-size: $font-medium;
+      color: $color-text-dark;
+    }
+    .center {
+      display:flex;
+      justify-content: center;
+      &.start {
+        visibility: visible;
+        color: $color-secondary;
+      }
+      &.stop {
+        visibility: hidden;
+      }
+    }
+  }
+}

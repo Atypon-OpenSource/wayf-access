@@ -1,0 +1,14 @@
+<div class='list-item'>
+  <div class="col name">
+    {{#link-to "admin.user" item.id }} {{item.firstName}} {{item.lastName}} {{/link-to}}
+  </div>
+  <div class="col name">
+     {{item.email}}
+</div>
+  <div class="col actions link">
+    {{#link-to 'admin.user.reset' item  }} password reset {{/link-to}}
+  </div>
+  <div class="col actions link">
+    <a href="#" {{action 'delete' item.id}}> delete </a>
+  </div>
+</div>

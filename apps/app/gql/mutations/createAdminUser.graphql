@@ -1,0 +1,15 @@
+mutation ($email: String!, $lastName: String!, $firstName: String!, $phone: String!, $password: String!){
+  createAdminUser (
+    email: $email,
+    lastName: $lastName,
+    firstName: $firstName,
+    phone: $phone,
+    password: $password
+    )  {
+      id
+      email
+      phone
+      firstName
+      lastName
+  }
+}

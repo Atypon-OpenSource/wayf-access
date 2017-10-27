@@ -1,0 +1,43 @@
+$form-padding: 30px;
+.item-form {
+  display:flex;
+  flex:1;
+  flex-direction: column;
+  border-color: $color-gray-ribbon-border;
+  border-width: 0px 1px;
+  border-style: solid;
+  .row {
+  }
+  .item-form-header {
+    padding:$form-padding;
+    background-color: $color-gray-ribbon;
+    border-bottom: 1px solid $color-gray-ribbon-border;
+    display:flex;
+    justify-content: space-between;
+    font-size: 25px;
+    .item-form-title{
+      color: $color-primary;
+    }
+    .item-form-close {
+      color: lighten($color-black,70%);
+      cursor: pointer;
+      &:hover {
+        color: darken($color-primary,10%);
+      }
+      &:active {
+        color: lighten($color-primary,10%);
+      }
+    }
+  }
+  .item-form-main {
+    padding: 0px $form-padding;
+    display:flex;
+    flex:1;
+  }
+  .item-form-actions {
+    padding: $form-padding;
+    display:flex;
+    border:1px solid $color-secondary;
+    height:60px;
+  }
+}

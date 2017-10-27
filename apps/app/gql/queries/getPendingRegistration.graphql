@@ -1,0 +1,14 @@
+query ($id: ID!) {
+  getPendingRegistration (id: $id){
+    id
+    name
+    date
+    contact {
+      id
+      firstName
+      lastName
+      phone
+      email
+    }
+  }
+}

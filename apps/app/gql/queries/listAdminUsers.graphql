@@ -1,0 +1,9 @@
+{
+  listAdminUsers {
+    id
+    firstName
+    lastName
+    email
+    phone
+  }
+}

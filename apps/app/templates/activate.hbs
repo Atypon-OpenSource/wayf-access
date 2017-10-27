@@ -1,0 +1,35 @@
+<div class="my-container centered top" style="align-items: center;">
+  <div class="limit-width column narrow thanks">
+    <div class="thin fnt-large">
+    Be remembered across domains, so that you don't have to repeat the same steps every time you transition from one domain to another.
+  </div>
+  <div class="carousel">
+    {{#swiper-container pagination=true loop=true}}
+      {{#swiper-slide class='slide'}}
+        <div class="message left">
+          <h3> Transparency </h3>
+          <p> View when, how, and who accesses your data</p>
+        </div>
+        <div class="image">
+          <img src="/assets/images/slider-1.png"/>
+        </div>
+      {{/swiper-slide}}
+      {{#swiper-slide class='slide'}}
+        <div class="image">
+          <img src="/assets/images/slider-2.png"/>
+        </div>
+        <div class="message right">
+          <h3> Control </h3>
+          <p> Control the data which is stored for you in the WAYF Cloud</p>
+        </div>
+      {{/swiper-slide}}
+    {{/swiper-container}}
+  </div>
+    <p class="thin fnt-small">
+      The WAYF Cloud would like to request your consent to track the Identity Provider(s) you use
+      in order to Sign-in to WAYF Cloud <a href="/sp/members" class='p-link'>members</a>.
+      You will be able to withdraw your consent at any time.
+    </p>
+    {{activate-wayf deviceActivated='deviceActivated'}}
+  </div>
+</div>
