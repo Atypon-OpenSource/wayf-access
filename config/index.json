@@ -1,0 +1,13 @@
+{
+  "port": {
+    "https": 3334,
+    "http": 3333
+  },
+  "cloud" : {
+    "URL": "https://wayf-cloud-sandbox.literatumonline.com/",
+    "apiVersion": 1
+  },
+  "logger": {
+  	"directory": "logs/"
+  }
+}
