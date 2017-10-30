@@ -57,11 +57,12 @@ app
    res.send("pong");
  })
 
- .all('/api/*',proxy(config.cloud.URL,{
-    proxyReqPathResolver: function(req) {
-      return url.parse(req.url).path.replace('api',config.cloud.apiVersion);
-    }
- }))
+ .all('/1/*',proxy(config.cloud.URL))
+ // .all('/api/*',proxy(config.cloud.URL,{
+ //    proxyReqPathResolver: function(req) {
+ //      return url.parse(req.url).path.replace('api',config.cloud.apiVersion);
+ //    }
+ // }))
 
  .get('/public/*', proxy(config.cloud.URL)) // path where the widget.js is located
 
