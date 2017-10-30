@@ -4,7 +4,9 @@
   "description": "WAYF Cloud Access Server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm install && npm run build --prefix apps/"
   },
   "repository": "https://github.com/Atypon-OpenSource/wayf-access",
   "license": "Apache-2.0",
