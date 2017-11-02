@@ -32,7 +32,7 @@ module.exports = {
       let activity = await wayf.listActivity(context,{limit:1, type:'ADD_IDP'});
       return {
         date: activity[0]?activity[0].createdDate:null,
-        id: activity[0]?activity[0].publisher?activity[0].publisher.id:null
+        id: activity[0]?activity[0].publisher.id:null
       }
     }
   },
