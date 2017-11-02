@@ -25,7 +25,7 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
-    ENV.APP.wayfURL = 'https://localhost:3334';
+    ENV.APP.wayfURL = 'http://localhost:3000';
   }
 
   if (environment === 'test') {
@@ -42,7 +42,7 @@ module.exports = function(environment) {
   if (environment === 'production') {
     ENV.APP.wayfURL = 'https://wayf-cloud-sandbox.literatumonline.com';
   }
-  ENV.APP.restAPI = ENV.APP.wayfURL+ '/api';
+  ENV.APP.restAPI = ENV.APP.wayfURL+ '/1';
   ENV.apollo.apiURL = ENV.APP.wayfURL+ '/graphql';
   ENV.apollo.requestCredentials = "include";
 
