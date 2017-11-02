@@ -86,6 +86,8 @@
   color:$color-secondary;
   font-size:15px;
   font-weight: lighter;
+  display: flex;
+  flex-direction: column;
 }
 
 .cancel-consent {
