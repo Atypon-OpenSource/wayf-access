@@ -11,7 +11,9 @@
         <div class="h2"> Operatin System: {{model.device.name}} - {{model.os.type}} </div>
         {{/if}}
         <div class="last-seen fnt-hair">
+          {{#if model.latestActivity.publisherName}}
           Last seen at {{model.latestActivity.publisherName}} ({{moment-from-now model.latestActivity.activityDate}})
+          {{/if}}
         </div>
       </div>
       <div class="cancel-consent">
