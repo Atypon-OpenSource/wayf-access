@@ -6,7 +6,10 @@ export default Ember.Component.extend({
     async activate () {
       console.log("Action: Activate");
       try {
-        let createResponse = await Ember.$.post(config.APP.restAPI + '/device');
+        let createResponse = await Ember.$.post( {
+          url: config.APP.restAPI + '/devices',
+          credentials: 'include'
+        });
         console.log('Create Respose:', createResponse);
         this.sendAction("deviceActivated");
       } catch (err) {
