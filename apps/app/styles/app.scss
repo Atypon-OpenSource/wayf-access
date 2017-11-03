@@ -16,11 +16,15 @@ html, body {
   padding: 0px;
 //  font-family: 'Advent Pro', sans-serif;
   font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex:1;
 }
 body {
   color: $color-text-dark;
   font-size: 14px;
   background-color: $color-background;
+  display: flex;
+  flex-direction: column;
 }
 .ember-view{
   height:100%;
