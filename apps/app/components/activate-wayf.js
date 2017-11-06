@@ -7,7 +7,7 @@ export default Ember.Component.extend({
       console.log("Action: Activate");
       try {
         let createResponse = await Ember.$.post( {
-          url: config.APP.restAPI + '/devices',
+          url: config.APP.restAPI + '/device',
           credentials: 'include'
         });
         console.log('Create Respose:', createResponse);
