@@ -5,10 +5,7 @@ import query from 'wayf-apps/gql/queries/listPublishers';
 export default Ember.Route.extend(RouteQueryManager, {
   apollo: Ember.inject.service(),
   model() {
-    let variables= {
-      limit: 500
-    };
-    return this.get('apollo').watchQuery({ query, variables }, 'listPublishers');
+    return this.get('apollo').watchQuery({ query }, 'listPublishers');
   },
   actions: {
     error(error, transition) {

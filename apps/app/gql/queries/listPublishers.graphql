@@ -1,5 +1,5 @@
-query ($skip: Int, $limit: Int){
-  listPublishers (skip: $skip, limit: $limit){
+query ($skip: Int){
+  listPublishers (skip: $skip, limit: 500){
     id
     name
     date
