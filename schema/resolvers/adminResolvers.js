@@ -60,10 +60,17 @@ module.exports = {
     name: (root) => root.publisherName,
     date: (root) => root.applicationDate,
     contact: async (root,data,context) => {
+      console.log("ContactID:", root.contact.id);
+      let contact = await loaders.user.load(root.contact.id);
       return {
-        id: root.contact?root.contact.id:null,
-        contact: await wayf.getUserById(context,root.contact)
+        id: root.contact.id,
+        contact: contact
       }
+      //
+      // return {
+      //   id: root.contact?root.contact.id:null,
+      //   contact: await wayf.getUserById(context,root.contact)
+      // }
     }
   },
   MemberPublisherType: {
