@@ -12,6 +12,10 @@ export default Ember.Route.extend(RouteQueryManager,{
     return await this.get('apollo').watchQuery({ query, variables }, 'getPublisher');
   },
   actions: {
+    deleted () {
+      console.log("publisher id Deleted")
+      this.transitionTo("admin.publishers");
+    },
     error(error, transition) {
       console.log("Error:", error)
       // let the route above handle the error

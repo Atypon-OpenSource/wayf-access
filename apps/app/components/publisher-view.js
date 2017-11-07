@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import mutation from 'wayf-apps/gql/mutations/createPublisher';
+import mutation from 'wayf-apps/gql/mutations/deletePublisher';
 import listPublishersQuery from 'wayf-apps/gql/queries/listPublishers';
 
 
@@ -8,32 +8,31 @@ export default Ember.Component.extend({
   classNames: ['full-width'],
   loading: "stop",
   actions: {
-    async deletePublisher() {
-      this.set('loading', "start");
-      let variables = this.getProperties('name','email','firstName','lastName','phone');
+    async deletePublisher(param) {
       this.set('loading', "start");
       let mutateObj = {
         mutation,
-        variables,
-        update: (store, {data: {createPublisher}}) => {
-          console.log("Update Store with:", createPublisher);
-          console.log("Query:", listPublishersQuery)
-
+        variables : {
+          id: param.id
+        },
+      update: (store, {data: {deletePublisher}}) => {
           const data = store.readQuery({query: listPublishersQuery});
-          console.log("DATA:", data)
-          data.listPublishers.push(createPublisher);
+          data.listPublishers = data.listPublishers.filter(element => {
+            return element.id !== param.id
+          });
           store.writeQuery({query:listPublishersQuery,data});
-          this.set('loading', "stop");
+          this.sendAction('publisherIsDeleted');
         }
       };
-      // try {
-      //    let response = await this.get('apollo').mutate(mutateObj,'createPublisher');
-      //    console.log("response:", response)
-      //    this.sendAction('publisherDeleted', response);
-      //  }
-      //  catch (err) {
-      //    console.log('Error: ', err)
-      //  }
+      try {
+         let reponse = await this.get('apollo').mutate(mutateObj,'deletePublisher');
+         console.log("response:", reponse)
+         this.set('loading', "none");
+       }
+       catch (err) {
+         console.log('Error: ', err)
+         this.set('loading', "none");
+       }
     }
   },
 });
