@@ -14,7 +14,6 @@ module.exports = {
       return wayf.listIdp(context);
     },
     listActivity: (root,data,context) => {
-      console.log("Data: ", data)
       return wayf.listActivity(context,data);
     }
   },
@@ -61,8 +60,6 @@ module.exports = {
     publisherId: (root) => root.publisher?root.publisher.id:"<User>",
     publisherName: async (root,data,context) => {
       if (root.publisher) {
-        //let pubs = await wayf.getPublisherById(context,root.publisher);
-        // disable data loader till the loader API is enhanced to return results in the right order
         let pubs = await loaders.publisher.load(root.publisher.id);
         return pubs.name;
       }
@@ -80,16 +77,12 @@ module.exports = {
     }
   },
   ActivityDataType: {
-    // id: (root) => root.identityProvider?root.identityProvider.id:null,
-    //type: (root) => root.identityProvider?root.identityProvider.type:null,
     name: async (root,data,context) => {
-      console.log("Root: ", root)
       let name;
       if (root.id) {
        let idps = await loaders.idp.load(root.id);
        name = idps.name
       }
-      //name = await wayf.getIdpById(context,root.id);
       return name;
     }
   }
