@@ -8,9 +8,17 @@
   <div class="col actions">
   </div>
 </div>
-{{#each model as |publisher|}}
-  {{item-publisher item=publisher}}
-{{/each}}
+
+{{#if model}}
+  {{#each model as |publisher|}}
+    {{item-publisher item=publisher}}
+  {{/each}}
+{{else}}
+  <div class="center">
+    no pending registrations
+  </div>
+{{/if}}
+
 <div class="add">
   {{#link-to 'admin.newpublisher' class='btn btn-color-primary'}} + {{/link-to}}
 </div>

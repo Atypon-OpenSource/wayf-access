@@ -4,6 +4,10 @@ import AuthenticatedRouteMixin from 'ember-simple-auth/mixins/authenticated-rout
 //export default Ember.Route.extend(AuthenticatedRouteMixin);
 export default Ember.Route.extend(AuthenticatedRouteMixin, {
   session: Ember.inject.service('session'),
+  setupController(controller, post) {
+    this._super(controller, post);
+    this.controllerFor('application').set('coBrand', 'for admins');
+  },
   actions: {
     error(error, transition) {
       // in most cases the server will return all errors as graphQLerror

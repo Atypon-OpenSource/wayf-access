@@ -4,6 +4,10 @@ import query from 'wayf-apps/gql/queries/getDevice';
 
 export default Ember.Route.extend(RouteQueryManager,{
   apollo: Ember.inject.service(),
+  setupController(controller, post) {
+    this._super(controller, post);
+    this.controllerFor('application').set('coBrand', 'inspector');
+  },
   model() {
     return this.get('apollo').watchQuery({ query }, 'getDevice');
   },

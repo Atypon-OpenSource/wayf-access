@@ -48,9 +48,13 @@ $font-xxl: 38px;
 }
 
 .fnt-brand {
-  font-size: $font-small;
+  font-size: $font-medium;
   color: $color-header-light;
   font-family: 'Exo 2', sans-serif;
+}
+
+.fnt-sub {
+  font-size: $font-tiny;
 }
 
 .fnt-header {

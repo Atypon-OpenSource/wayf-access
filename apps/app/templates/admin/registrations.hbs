@@ -12,6 +12,13 @@
   <div class="col actions">
   </div>
 </div>
-{{#each model as |registration|}}
-  {{item-registration item=registration}}
-{{/each}}
+
+{{#if model}}
+  {{#each model as |registration|}}
+    {{item-registration item=registration}}
+  {{/each}}
+{{else}}
+  <div class="center">
+    no pending registrations
+  </div>
+{{/if}}
