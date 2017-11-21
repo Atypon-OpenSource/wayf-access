@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('me', function() {
     this.route('idp');
     this.route('activity');
+    this.route('confirmation');
   });
   this.route('admin', function() {
     this.route('registrations');

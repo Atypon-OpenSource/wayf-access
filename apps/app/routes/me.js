@@ -1,7 +1,6 @@
 import Ember from 'ember';
 import RouteQueryManager from 'ember-apollo-client/mixins/route-query-manager';
 import query from 'wayf-apps/gql/queries/getDevice';
-import mutation from 'wayf-apps/gql/mutations/deleteConsent';
 
 export default Ember.Route.extend(RouteQueryManager, {
   apollo: Ember.inject.service(),
@@ -30,15 +29,8 @@ export default Ember.Route.extend(RouteQueryManager, {
         this.transitionTo('oops');
       }
     },
-    deleteConsent() {
-      let mutateObj = {
-        mutation, variables: {},
-        update: (store, {data: {deleteConsent}}) => {
-          this.transitionTo('me');
-        }
-      };
-      let response = this.get('apollo').mutate(mutateObj, 'deleteConsent');
-      console.log(response);
+    withdrawConsent() {
+     this.transitionTo('me.confirmation');
 
     }
   },

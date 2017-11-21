@@ -12,7 +12,7 @@ module.exports = {
     getPendingRegistration: (root,data,context) => wayf.getPendingRegistrationById(context,data),
   },
   Mutation: {
-    deleteConsent: (root,data,context) => { return wayf.deleteConsent(context)},
+      withdraw: (root,data,context) => { return wayf.withdraw(context)},
     adminLogin: (root,data,context) => wayf.adminLogin(context,data),
     createPublisher: (root,data,context) => wayf.createPublisher(context,data),
     deletePublisher: (root,data,context) => wayf.deletePublisher(context,data),

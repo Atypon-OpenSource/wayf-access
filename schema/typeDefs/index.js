@@ -18,7 +18,7 @@ type Query {
 }
 
 type Mutation {
-  deleteConsent: String
+  withdraw: String
   deletePublisher (id: ID!): String
   deleteDevice(id:ID!): String
   forgetIdp(id: ID!): String
