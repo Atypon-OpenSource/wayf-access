@@ -35,5 +35,9 @@
         visibility: hidden;
       }
     }
+    &.horizontal {
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
 }

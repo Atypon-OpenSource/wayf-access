@@ -12,6 +12,7 @@ Router.map(function() {
     this.route('idp');
     this.route('activity');
   });
+  this.route('forget');
   this.route('admin', function() {
     this.route('registrations');
     this.route('registration', { path: '/registration/:id'}, function () {

@@ -38,6 +38,17 @@
       background-color: lighten($color-base-gray,10%);
     }
   }
+  &.btn-color-red {
+    background-color: $color-base-red;
+    border:1px solid darken($color-base-red,30%);
+    color: $color-white;
+    &:hover {
+      background-color: darken($color-base-red,10%);
+    }
+    &:active {
+      background-color: lighten($color-base-red,10%);
+    }
+  }
   &.btn-color-external-link {
     background-color: $color-external-link;
     border:1px solid darken($color-external-link,30%);

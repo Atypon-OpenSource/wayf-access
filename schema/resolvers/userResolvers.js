@@ -18,6 +18,7 @@ module.exports = {
     }
   },
   Mutation: {
+    withdrawConsent: (root,data,context) => { return wayf.withdrawConsent(context)},
     deleteDevice: (root,data,context) => wayf.deleteDevice(context,data),
     forgetIdp: (root, data, context) => wayf.forgetIdp(context,data)
   },

@@ -42,6 +42,10 @@
         visibility: hidden;
       }
     }
+    &.horizontal {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
   input {
     line-height: 2;

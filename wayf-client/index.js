@@ -14,6 +14,7 @@ module.exports.getDevice = async (context) => {
 
 };
 
+module.exports.withdrawConsent = async (context) => await client.delete(context,`/device/`);
 module.exports.deleteDevice = async (context) => await client.delete(context,`/device/${id}`);
 module.exports.listIdp = async (context) => await client.get(context,'/mydevice/history');
 module.exports.listActivity = async (context,data) => await client.get(context,'/mydevice/activity?'+qs.stringify(data));
