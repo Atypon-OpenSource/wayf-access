@@ -8,7 +8,11 @@ export default Ember.Route.extend(RouteQueryManager, {
   actions: {
     withdraw() {
       let mutateObj = {
-        mutation, variables: {}
+        mutation, variables: {},
+        update: (store, {data: {withdrawConsent}}) => {
+          this.transitionTo('activate');
+        }
+
       };
       let response = this.get('apollo').mutate(mutateObj, 'withdraw');
       console.log(response);
