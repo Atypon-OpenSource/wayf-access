@@ -10,7 +10,7 @@ export default Ember.Route.extend(RouteQueryManager, {
       let mutateObj = {
         mutation, variables: {},
         update: (store, {data: {withdrawConsent}}) => {
-          this.transitionTo('activate');
+          this.transitionTo('me');
         }
 
       };
