@@ -6,7 +6,7 @@ export default Ember.Route.extend(RouteQueryManager, {
   actions: {
     deviceDeactivated () {
       console.log("Device is deactivated");
-      this.transitionTo('me.activate');
+      this.transitionTo('activate');
     },
     cancel(){
      this.transitionTo('me');
