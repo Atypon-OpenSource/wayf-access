@@ -31,7 +31,6 @@ export default Ember.Route.extend(RouteQueryManager, {
     },
     withdrawConsent() {
      this.transitionTo('forget');
-
     }
   },
   afterModel() {
