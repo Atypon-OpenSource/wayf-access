@@ -1,5 +1,5 @@
-mutation ($name: String!, $email: String!, $lastName: String!, $firstName: String!, $phone: String!){
-  registerPublisher (name: $name, email: $email, lastName: $lastName, firstName: $firstName, phone: $phone) {
+mutation ($name: String!, $email: String!, $lastName: String!, $firstName: String!, $phone: String!, $url: String){
+  registerPublisher (name: $name, email: $email, lastName: $lastName, firstName: $firstName, phone: $phone, url: $url ) {
     code
   }
 }

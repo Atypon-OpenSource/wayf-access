@@ -3,6 +3,7 @@ query ($skip: Int){
     id
     name
     date
+    url
     api {
       widgetUrl
       token

@@ -4,6 +4,7 @@
     code
     name
     date
+    url
     contact {
       id
       firstName

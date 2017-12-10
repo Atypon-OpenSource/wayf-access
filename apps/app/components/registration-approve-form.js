@@ -19,6 +19,7 @@ export default Ember.Component.extend({
         lastName: this.get('item.contact.lastName'),
         email: this.get('item.contact.email'),
         phone: this.get('item.contact.phone'),
+        url: this.get('item.url'),
       }
       let mutateObj = {
         mutation,

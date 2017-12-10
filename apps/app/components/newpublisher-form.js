@@ -10,7 +10,7 @@ export default Ember.Component.extend({
   actions: {
     async createPublisher() {
       this.set('loading', "start");
-      let variables = this.getProperties('name','email','firstName','lastName','phone');
+      let variables = this.getProperties('name','email','firstName','lastName','phone', 'url');
       this.set('loading', "start");
       let mutateObj = {
         mutation,

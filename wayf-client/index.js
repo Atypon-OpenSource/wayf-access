@@ -68,6 +68,7 @@ module.exports.createPublisher = async (context,data) => {
   let body = {
     name: data.name,
     code: data.code || randomstring.generate(9),
+    url: data.url,
     contact : {
       firstName: data.firstName,
       lastName : data.lastName,
@@ -90,6 +91,7 @@ module.exports.listMembers = async (context,filter) => await client.get(context,
 module.exports.registerPublisher = async (context,data) => {
     let body = {
       publisherName: data.name,
+      url: data.url,
       contact : {
         firstName: data.firstName,
         lastName : data.lastName,
