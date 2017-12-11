@@ -36,6 +36,7 @@ module.exports = {
     name: (root) => root.name,
     code: (root) => root.code,
     date: (root) => root.createdDate,
+    url: (root) => root.url,
     api: (root,data,context) => {
       return {
         token: root.token?root.token.value:null,
@@ -57,6 +58,7 @@ module.exports = {
     id: (root) => root.id,
     name: (root) => root.publisherName,
     date: (root) => root.applicationDate,
+    url: (root) => root.url,
     contact: async (root,data,context) => {
       let contact = await loaders.user.load(root.contact.id);
       return {
@@ -69,7 +71,8 @@ module.exports = {
     id: (root) => root.id,
     name: (root) => root.name,
     date: (root) => root.createdDate,
-    code: (root) => root.code
+    code: (root) => root.code,
+    url: (root) => root.url
   },
   PublisherContactType: {
     id: (root) => root.id,

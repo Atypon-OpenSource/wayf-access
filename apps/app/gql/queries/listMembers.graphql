@@ -3,5 +3,6 @@ query ($skip: Int, $limit: Int) {
     code
     date
     name
+    url
   }
 }

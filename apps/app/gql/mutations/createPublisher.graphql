@@ -1,15 +1,17 @@
-mutation ($name: String!, $email: String!, $lastName: String!, $firstName: String!, $phone: String!, $registrationId: Int){
+mutation ($name: String!, $email: String!, $lastName: String!, $firstName: String!, $phone: String!, $url: String, $registrationId: Int){
   createPublisher (
     name: $name,
     email: $email,
     lastName: $lastName,
     firstName: $firstName,
     phone: $phone,
+    url: $url,
     registrationId: $registrationId
   ) {
     id
     date
     name
+    url
     api {
       token
       widgetUrl

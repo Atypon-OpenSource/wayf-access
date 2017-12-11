@@ -8,7 +8,7 @@ export default Ember.Component.extend({
     loading: "stop",
     actions: {
        async register () {
-         let variables = this.getProperties('name','email','firstName','lastName','phone');
+         let variables = this.getProperties('name','email','firstName','lastName','phone','url');
          this.set('loading', "start");
          let mutateObj = {
            mutation,

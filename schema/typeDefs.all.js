@@ -8,6 +8,7 @@ type PublicPublisher {
   code: String
   status: String!
   date: String
+  url: String
   contact: PublisherContact!
 }
 
@@ -18,6 +19,7 @@ type AdminPublisher {
   status: String!
   date: String
   api: PublisherApi
+  url: String
   contact: PublisherContact!
 }
 

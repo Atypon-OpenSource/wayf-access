@@ -14,6 +14,7 @@ type PublisherInputType {
   phone: String!
   firstName: String!
   lastName: String!
+  url: String
 }
 
 type MemberPublisherType {
@@ -23,6 +24,7 @@ type MemberPublisherType {
   status: String!
   date: String
   contact: PublisherContactType
+  url: String
 }
 
 type PublicPublisherType {
@@ -31,6 +33,7 @@ type PublicPublisherType {
   code: String
   status: String!
   date: String
+  url: String
   contact: PublisherContactType
 }
 
@@ -40,6 +43,7 @@ type AdminPublisherType {
   code: String
   status: String!
   date: String
+  url: String
   api: PublisherApiType
   contact: PublisherContactType
 }
