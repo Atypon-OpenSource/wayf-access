@@ -1,4 +1,4 @@
-mutation ($name: String!, $email: String!, $lastName: String!, $firstName: String!, $phone: String!, $url: String, $registrationId: Int){
+mutation ($name: String!, $email: String, $lastName: String, $firstName: String, $phone: String, $url: String, $registrationId: Int){
   createPublisher (
     name: $name,
     email: $email,

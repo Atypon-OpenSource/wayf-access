@@ -24,7 +24,7 @@ type Mutation {
   forgetIdp(id: ID!): String
   deleteIdp(id: ID!): IdpType
   adminLogin(emailAddress: String!, password: String!): AdminUserType
-  createPublisher (name:String!, code: String, email: String!, phone: String!, firstName: String!, lastName: String!, url:String, registrationId: Int): AdminPublisherType
+  createPublisher (name:String!, code: String, email: String, phone: String, firstName: String, lastName: String, url:String, registrationId: Int): AdminPublisherType
   registerPublisher (name:String!,  email: String!, phone: String!, firstName: String!, lastName: String!, url:String): PublicPublisherType
   rejectRegistration (id: ID!): String
   approveRegistration (id: ID!): String
