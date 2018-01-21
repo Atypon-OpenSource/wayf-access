@@ -99,6 +99,9 @@
       &.delete {
         background-color: $color-badge-red;
       }
+      &.create {
+        background-color: $color-badge-pink;
+      }
     }
   }
 }
