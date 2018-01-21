@@ -69,6 +69,7 @@ enum ActivityActionEnum {
   REMOVE_IDP
   READ_IDP_HISTORY
   ADD_IDP
+  CREATE_IDP
 }
 
 type ActivityData {
