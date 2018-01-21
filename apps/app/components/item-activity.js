@@ -3,7 +3,8 @@ import Ember from 'ember';
 const ACTION_NAMES = {
   ADD_IDP: 'write',
   READ_IDP_HISTORY : 'read',
-  REMOVE_IDP: 'delete'
+  REMOVE_IDP: 'delete',
+  CREATE_IDP: 'create'
 };
 
 export default Ember.Component.extend({
