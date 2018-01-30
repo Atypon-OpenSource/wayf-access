@@ -8,7 +8,13 @@ const client = require('./dispatcher'),
 /// User API //////
 module.exports.getDevice = async (context) => {
   let apiDevice = await client.get(context,'/mydevice');
-  let ua = parser(apiDevice.info.userAgent);
+  let ua;
+  if(context.userAgent){
+    ua = parser(context.userAgent);
+  }else {
+    ua = parser(apiDevice.info.userAgent);
+  }
+
   apiDevice.ua = ua;
   return apiDevice;
 

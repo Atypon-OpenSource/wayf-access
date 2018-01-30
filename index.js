@@ -31,7 +31,10 @@ const buildOptions = (req) => {
     if (req.session && req.session.token) {
       options.context.token = req.session.token;
     }
-    log.debug("Context created:", options.context)
+    if(req.header("user-agent")){
+        options.context.userAgent = req.header("user-agent");
+    }
+    log.debug("Context created:", options.context);
     return options;
   };
 ////////////////
