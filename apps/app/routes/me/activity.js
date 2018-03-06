@@ -1,8 +1,9 @@
 import Ember from 'ember';
+import Route from '@ember/routing/route';
 import RouteQueryManager from 'ember-apollo-client/mixins/route-query-manager';
 import query from 'wayf-apps/gql/queries/listActivity';
 
-export default Ember.Route.extend(RouteQueryManager, {
+export default Route.extend(RouteQueryManager, {
   apollo: Ember.inject.service(),
   skip: 0,
   loadingMore: false,

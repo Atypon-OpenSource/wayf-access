@@ -55,6 +55,14 @@ type ActivityDataType {
   id: String
   name: String
 }
+
+type UserMemberPublisherType {
+  id: ID!
+  name: String
+  code: String
+  status: Boolean!
+  url: String
+}
 `;
 
 module.exports = userTypeDefs;

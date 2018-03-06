@@ -15,6 +15,7 @@ type Query {
   listPublishers (skip: Int, limit:Int): [AdminPublisherType]!
   listPendingRegistrations (skip: Int, limit:Int): [PublicPublisherType]
   listAdminUsers(limit: Int, skip: Int): [UserType]!
+  listUserMembers(skip: Int, limit:Int): [UserMemberPublisherType]!
 }
 
 type Mutation {

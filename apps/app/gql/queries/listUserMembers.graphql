@@ -1,0 +1,8 @@
+query ($skip: Int, $limit: Int) {
+  listUserMembers (skip: $skip, limit: $limit){
+    code
+    name
+    url
+    status
+  }
+}

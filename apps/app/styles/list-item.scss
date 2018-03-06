@@ -67,6 +67,7 @@
     border-left: 2px solid $color-primary;
     height:100%;
   }
+
   .actions {
     width:100px;
     display:flex;
@@ -85,11 +86,25 @@
         color: $color-secondary;
       }
     }
+    &.status {
+      height: 2px;
+      width:50px;
+      border-radius: 5px;
+      color: $color-white;
+      justify-content: center;
+      &.Allowed {
+        background-color: $color-badge-green;
+      }
+      &.Blocked {
+        background-color: $color-badge-red;
+      }
+    }
     &.activity {
       height: 10px;
       border-radius: 5px;
       color: $color-white;
       background-color: gray;
+      justify-content: center;
       &.read {
         background-color: $color-badge-green;
       }
