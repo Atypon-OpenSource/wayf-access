@@ -7,11 +7,17 @@ module.exports = {
     getDevice: (roor,data,context) => {
       return wayf.getDevice(context);
     },
-    listIdp: (root,data,context) => {
+    listIdp: async (root,data,context) => {
       // the 3rd argument of the resolver, args[2], is the "context"
       // the context is created with graphqlExpress
       // the device ID is passed from the request cookie into the context
-      return wayf.listIdp(context);
+      let history = await wayf.listIdp(context);
+      history.forEach(function(item){
+        if (item.idp && !item.idp.name) {
+          item.idp.name = item.idp.entityId;
+        }
+      });
+      return history;//wayf.listIdp(context);
     },
     listActivity: (root,data,context) => {
       return wayf.listActivity(context,data);
