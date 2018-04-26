@@ -22,7 +22,7 @@ type PublisherActivityType {
 type IdpType {
   lastActiveDate: String
   id: ID!
-  name: String!
+  name: String
   logoUrl: String
   frequency: Float!
   type: IdpTypeEnum!
