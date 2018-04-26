@@ -34,14 +34,14 @@
 			"date": "2017-12-10 13:05:18+0000",
 			"name": "Wiley",
 			"url": null,
-			"status": false
+			"status": true
 		}, {
       "id":6,
   		"code": "0LjIZeAgo",
 			"date": "2018-01-14 15:40:48+0000",
 			"name": "SAGE",
 			"url": null,
-			"status": false
+			"status": true
 		},
     {
       "id":7,
@@ -49,7 +49,7 @@
       "date": "2018-03-13 11:02:04+0000",
       "name": "University of Alpha",
       "url": null,
-      "status": true
+      "status": false
     },
     {
        "id":8,
@@ -57,15 +57,31 @@
        "date": "2018-03-13 11:08:22+0000",
        "name": "Delta College",
        "url": "https://delta-college.herokuapp.com",
-       "status": true
+       "status": false
      },
      {
-       "id":8,
+       "id":9,
        "code": "pedFNIcJF",
        "date": "2018-03-13 11:09:44+0000",
        "name": "Lamda University",
        "url": "https://lamda-university.herokuapp.com",
-       "status": true
+       "status": false
+     },
+     {
+       "id":10,
+       "code": "ohmyj7QAz",
+       "date": "2018-04-20 11:09:44+0000",
+       "name": "Manuscripts",
+       "url": "https://www.manuscriptsapp.com/",
+       "status": false
+     },
+     {
+       "id":11,
+       "code": "2becJerDE",
+       "date": "2018-04-20 11:09:44+0000",
+       "name": "Scitrus",
+       "url": "https://scitrus.io",
+       "status": false
      }
   ]
 }
