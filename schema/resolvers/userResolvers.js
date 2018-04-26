@@ -1,5 +1,6 @@
 const wayf = require('../../wayf-client'),
-      loaders = require('../dataloaders');
+      loaders = require('../dataloaders'),
+      userMembers = require('../../wayf-client/usermembers');
 
 
 module.exports = {
@@ -21,6 +22,10 @@ module.exports = {
     },
     listActivity: (root,data,context) => {
       return wayf.listActivity(context,data);
+    },
+    listUserMembers: (root,data,context) => {
+      console.log(userMembers.list)
+      return userMembers.list;
     }
   },
   Mutation: {

@@ -35,8 +35,12 @@ export default Ember.Route.extend(RouteQueryManager, {
   },
   afterModel() {
     let url = this.get('router.url');
-    if (url.match(/me\/activity*/))
+    if (url.match(/me\/activity*/)) {
       this.transitionTo('me.activity');
+    }
+    else if (url.match(/me\/members*/)) {
+      this.transitionTo('me.members');
+    }
     else {
       this.transitionTo('me.idp');
     }
