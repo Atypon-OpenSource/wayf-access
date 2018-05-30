@@ -28,44 +28,76 @@
 			"name": "Yellow Publisher",
 			"url": null,
 			"status": true
-		}, {
+		},{
       "id":5,
-			"code": "a2VwTJiBx",
-			"date": "2017-12-10 13:05:18+0000",
-			"name": "Wiley",
-			"url": null,
-			"status": false
-		}, {
-      "id":6,
-  		"code": "0LjIZeAgo",
-			"date": "2018-01-14 15:40:48+0000",
-			"name": "SAGE",
-			"url": null,
-			"status": false
-		},
-    {
-      "id":7,
       "code": "AHOi1iI14",
       "date": "2018-03-13 11:02:04+0000",
       "name": "University of Alpha",
       "url": null,
       "status": true
-    },
-    {
-       "id":8,
+    }, {
+       "id":6,
        "code": "2hHo2aT5n",
        "date": "2018-03-13 11:08:22+0000",
        "name": "Delta College",
        "url": "https://delta-college.herokuapp.com",
        "status": true
-     },
-     {
-       "id":8,
+     }, {
+       "id":7,
        "code": "pedFNIcJF",
        "date": "2018-03-13 11:09:44+0000",
        "name": "Lamda University",
        "url": "https://lamda-university.herokuapp.com",
        "status": true
-     }
+     }, {
+      "id":8,
+ 			"code": "a2VwTJiBx",
+ 			"date": "2017-12-10 13:05:18+0000",
+ 			"name": "Wiley Online Library",
+ 			"url": null,
+ 			"status": true
+ 		}, {
+       "id":9,
+   		"code": "0LjIZeAgo",
+ 			"date": "2018-01-14 15:40:48+0000",
+ 			"name": "SAGE Journals",
+ 			"url": null,
+ 			"status": true
+ 		}, {
+       "id":10,
+   		"code": "manus",
+ 			"date": "2018-05-11 15:40:48+0000",
+ 			"name": "Manuscripts",
+ 			"url": null,
+ 			"status": false
+ 		}, {
+       "id":11,
+   		"code": "scitr",
+ 			"date": "2018-01-14 15:40:48+0000",
+ 			"name": "Scitrus",
+ 			"url": null,
+ 			"status": false
+ 		},{
+       "id":12,
+   		"code": "magonln",
+ 			"date": "2018-05-11 15:40:48+0000",
+ 			"name": "MAG Online Library",
+ 			"url": null,
+ 			"status": true
+ 		},{
+       "id":13,
+   		"code": "areviews",
+ 			"date": "2018-01-14 15:40:48+0000",
+ 			"name": "Annual Reviews",
+ 			"url": null,
+ 			"status": true
+ 		},{
+       "id":14,
+   		"code": "nejm",
+ 			"date": "2018-05-29 15:40:48+0000",
+ 			"name": "New England Journal of Medicine",
+ 			"url": null,
+ 			"status": true
+ 		}
   ]
 }
