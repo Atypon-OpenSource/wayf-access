@@ -20,6 +20,11 @@ module.exports = {
     // node files
     {
       files: [
+<<<<<<< HEAD
+=======
+        '.template-lintrc.js',
+        'ember-cli-build.js',
+>>>>>>> d104826... message
         'testem.js',
         'ember-cli-build.js',
         'config/**/*.js',
